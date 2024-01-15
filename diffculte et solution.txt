@@ -6,8 +6,14 @@
  ====== a faire ==========
  je doit mexercer a creer des schema mongoose 
  =========================
+
 === mongoose =========
 -connect: permet de se connecter a la bd
 -new mongoose.schema({}): creer un schema dobjet
 -mongoose.model : permet de creer lobjet et on lexport pour lutiliser 
 ======================
+
+
+=====json response====
+res.status(code status)json(message)
+=======================
