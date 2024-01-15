@@ -7,9 +7,11 @@ import About from './assets/pages/About'
 import Profile from './assets/pages/Profile'
 import SignIn from './assets/pages/SignIn'
 import SignOut from './assets/pages/SignOut'
+import Header from './assets/component/Header'
 
 export default function App() {
   return <BrowserRouter>
+  <Header/>
   <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='about' element={<About/>}/>

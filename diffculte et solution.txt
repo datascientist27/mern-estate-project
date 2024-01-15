@@ -1,0 +1,6 @@
+
+==>config user name and email
+=
+==> crlf warning
+= git config --global core.autocrlf true
+ 
