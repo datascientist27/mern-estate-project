@@ -29,3 +29,14 @@ app.listen(3000,()=>{
 
 app.use("/Api/user",useRouter);
 app.use("/Api/auth",authRouter);
+app.use((err,req,res,next)=>{
+    const statuscode = err.statuscode||500;
+    const message = err.message||'server internal error'
+
+    return res.status(statuscode).json({
+        success:false,
+        statuscode,
+        message
+        
+    })
+})

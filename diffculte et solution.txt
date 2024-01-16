@@ -17,3 +17,8 @@
 =====json response====
 res.status(code status)json(message)
 =======================
+
+==========middleware ====
+tres important de creer un middleware
+pour gerer les error
+========================
