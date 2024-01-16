@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 export default function () {
   return (
     <div>
-     <header className=' bg-sky-950 shadow-lg'>
-        <div className='flex justify-between items-center mx-auto max-w-6xl p-3'>
+     <header className=' bg-emerald-950 shadow-xl'>
+        <div className='flex justify-between items-center mx-auto max-w-6xl p-6'>
         <h1 className='font-bold tex-sm sm:text-xl flex  flex-wrap'>
             <span className=' text-sky-50'>TOGO</span><span className='text-sky-100'>-Immo</span>
         </h1>
