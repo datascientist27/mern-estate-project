@@ -22,3 +22,9 @@ res.status(code status)json(message)
 tres important de creer un middleware
 pour gerer les error
 ========================
+
+==============gestion deta==================
+dans les input on mes les event listener (onchange ({prend en parametre une fonction}))
+cette fonction doit etre declarer prealabement avec e comme levenement en parametre
+pour gerer leta on destructure [formData,setData]=useState({})
+===========================================
