@@ -1,6 +1,4 @@
 import React from 'react'
-
-
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home from './assets/pages/Home'
 import About from './assets/pages/About'
