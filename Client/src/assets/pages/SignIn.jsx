@@ -2,6 +2,7 @@ import { useState} from "react"
 import { useDispatch, useSelector } from "react-redux";
 import { Link , useNavigate } from "react-router-dom";
 import { signInSart,signInSuccess,signInFailure } from "../../redux/user/userSlice";
+import Oath from "../component/Oath";
 
 
 
@@ -50,7 +51,7 @@ export default function SignIn() {
     
     };
 
-    console.log(formData)
+    
  
 
   return (
@@ -59,9 +60,10 @@ export default function SignIn() {
       <form onSubmit={submitHandler} className='flex flex-col  gap-4'>
         <input type="text" placeholder='Email' className='border p-3  rounded-lg ' id='email'onChange={changeHandler} />
         <input type="text" placeholder='Password' className='border p-3  rounded-lg' id='password'onChange={changeHandler} />
-        <button disabled={loading} className=' text-white  bg-emerald-950 hover:opacity-95 disabled:opacity-75 rounded-lg p-3 uppercase'onSubmit={submitHandler} >{loading? 'loading...': 'Sign Up'}</button>
+        <button disabled={loading} className=' text-white  bg-emerald-950 hover:opacity-95 disabled:opacity-75 rounded-lg p-3 uppercase'onSubmit={submitHandler} >{loading ? 'loading...': 'Sign Up'}</button>
+        <Oath/>
       </form>
-      <p className='p-3'>Dont have an account ? <Link to="/sing-up"><span className='text-red-600'>Sing Up</span></Link></p>
+      <p className='p-3'>Dont have an account ? <Link to='/sign-up'><span className='text-red-600'>Sing up</span></Link></p>
       <div >
         {error && <p className="text-red-600 ml-3">{error}</p>}
       </div>

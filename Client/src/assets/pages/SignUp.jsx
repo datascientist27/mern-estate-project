@@ -1,5 +1,6 @@
 import { useState} from "react"
 import { Link , useNavigate } from "react-router-dom"
+import Oath from "../component/Oath";
 
 
 
@@ -59,8 +60,9 @@ export default function SignUp() {
         <input type="text" placeholder='Email' className='border p-3  rounded-lg ' id='email'onChange={changeHandler} />
         <input type="text" placeholder='Password' className='border p-3  rounded-lg' id='password'onChange={changeHandler} />
         <button disabled={loading} className=' text-white  bg-emerald-950 hover:opacity-95 disabled:opacity-75 rounded-lg p-3 uppercase'onSubmit={submitHandler} >{loading? 'loading...': 'Sign Up'}</button>
+        <Oath/>
       </form>
-      <p className='p-3'>Have an account ? <Link to="/sing-in"><span className='text-red-600'>Sing In</span></Link></p>
+      <p className='p-3'>Have an account ? <Link to="/sign-in"><span className='text-red-600'>Sing In</span></Link></p>
       <div >
         {error && <p className="text-red-600 ml-3">{error}</p>}
       </div>
